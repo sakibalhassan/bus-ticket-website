@@ -5,17 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus ticket website</title>
+    <!-- font awesome  link-->
+    <script src="https://kit.fontawesome.com/20cb76860e.js" crossorigin="anonymous"></script>
+    <!-- font awesome  link-->
+
     <!-- daisy tailwind css link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy tailwind css link -->
+
     <!-- raw css link -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- raw css link -->
 </head>
 
-<body>
+<body class="font-popins">
+    <header class="container mx-auto">
+        <!--=========== navbar start============= -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Shakib-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-green-500 rounded-xl">Bus <i
+                            class="fa-solid fa-van-shuttle text-green-500"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!--============= navbar end================== -->
 
+
+        <!--=========== banner section start=========== -->
+
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-4xl font-bold">End-To-End travel With <span class="text-green-500">Shakib
+                                Paribahan</span></h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined </p>
+                        <button class="btn btn-success font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=========== banner section end=========== -->
+    </header>
+    <main class="container mx-auto">
+
+        <!--=========== offer section start============== -->
+
+        <section class="my-20">
+            <h2 class="text-4xl text-center font-bold">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row gap-6 px-2 mt-6">
+                <div class="lg:w-1/2 sm:w-full h-56">
+                    <div class="flex justify-between p-12 bg-yellow-500">
+                        <div>
+                            <h3 class="text-4xl font-extrabold">15% OFF</h3>
+                            <h4 class="text-lg font-bold">on your next purchase</h4>
+                            <p class="text-sm">use by January 2024 </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">NEW15</h3>
+                            <p class="text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 sm:full h-56">
+                    <div class="flex justify-between p-12 bg-teal-300">
+                        <div>
+                            <h3 class="text-4xl font-extrabold">15% OFF</h3>
+                            <h4 class="text-lg font-bold">on your next purchase</h4>
+                            <p class="text-sm">use by January 2024 </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">NEW15</h3>
+                            <p class="text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="btn btn-outline btn-secondary">See All Offer</button>
+
+            </div>
+        </section>
+
+        <!--=========== offer section end============== -->
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
